@@ -7,31 +7,31 @@ package pokedex.itosoft.wilson.com.pokedex.models;
 public class Pokemon {
 
     private int number;
-    private String texto;
-    private String imagen_url;
-
-    public String getTexto() {
-        return texto;
-    }
-
-    public void setTexto(String texto) {
-        this.texto = texto;
-    }
-
-    public String getImagen_url() {
-        return imagen_url;
-    }
-
-    public void setImagen_url(String url) {
-        this.imagen_url= url;
-    }
+    private String name;
+    private String url;
 
     public int getNumber() {
-        String[] urlPartes = imagen_url.split("/");
+        String[] urlPartes = url.split("/");
         return Integer.parseInt(urlPartes[urlPartes.length - 1]);
     }
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String get_url() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url= url;
     }
 }

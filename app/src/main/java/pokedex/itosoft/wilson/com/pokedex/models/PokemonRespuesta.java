@@ -8,13 +8,13 @@ import java.util.ArrayList;
 
 public class PokemonRespuesta {
 
-    private ArrayList<Pokemon> items;
+    private ArrayList<Pokemon> results;
 
-    public ArrayList<Pokemon> getItems() {
-        return items;
+    public ArrayList<Pokemon> getResults() {
+        return results;
     }
 
-    public void setItems(ArrayList<Pokemon> items) {
-        this.items = items;
+    public void setResults(ArrayList<Pokemon> items) {
+        this.results = items;
     }
 }

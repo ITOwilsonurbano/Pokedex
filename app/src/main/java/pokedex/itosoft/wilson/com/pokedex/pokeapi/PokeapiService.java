@@ -10,8 +10,7 @@ import retrofit2.http.GET;
 
 public interface PokeapiService {
 
-    @GET("noticias")
+    @GET("pokemon")
     Call<PokemonRespuesta> obtenerListaPokemon(/*@Query("limit") int limit, @Query("offset") int offset*/);
-
 
 }

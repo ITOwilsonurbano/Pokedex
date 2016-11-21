@@ -15,7 +15,6 @@ import java.util.ArrayList;
 
 import pokedex.itosoft.wilson.com.pokedex.models.Pokemon;
 
-
 /**
  * Created by wilsonurbano on 28/10/16.
  */
@@ -39,10 +38,10 @@ public class ListaPokemonAdapter extends RecyclerView.Adapter<ListaPokemonAdapte
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Pokemon p = dataset.get(position);
-        holder.nombreTextView.setText(p.getTexto());
+        holder.nombreTextView.setText(p.getName());
 
         Glide.with(context)
-                .load("http://api.inder.gov.co:8080/uploads/noticias/"+ p.getNumber()+".jpg")
+                .load("http://pokeapi.co/media/sprites/pokemon/"+ p.getNumber()+".png")
                 .centerCrop()
                 .crossFade()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
